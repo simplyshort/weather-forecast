@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <title>Weather App</title>
 </head>
 <body>
 <div class="weather-app">
     <header>
         <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city.." id="search-form-input" required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button"/>
+            <input type="search" placeholder="Enter a city.." id="search-form-input" required class="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>    
     </header>
     <main>
-<div class="weather-app-data">
-    <div>
-    <h1 class="weather-app-city" id="city">Melbourne</h1>
-    <p class="weather-app-details">
-        <span id="time">Sunday 12:00, <span id="description"></span>
-        <br />
-        Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
-    </p>
-    </div>
-    <div class="weather-app-temp-container">
-        <div class="weather-app-icon">☀️</div>
-        <div class="weather-app-temp-value" id="temperature">21</div>
-        <div class="weather-app-unit">°C</div>
-    </div>
+        <div class="weather-app-data">
+            <div>
+                <h1 class="weather-app-city" id="city">Select your city</h1>
+                <p class="weather-app-details">
+                    <span id="time"></span>, <span id="description"></span>
+                    <br />
+                    Humidity: <strong id="humidity">--</strong>%, Wind: <strong id="wind-speed">--</strong> km/h
+                </p>
+            </div>
+            <div class="weather-app-temp-container">
+                <div id="icon">
+                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-app-icon">
+                </div>
+                <div class="weather-app-temp-value" id="temperature"></div>
+                <div class="weather-app-unit">°C</div>
+            </div>
+        </div>
     </main>
-
-
     <footer>
-    Built by 
-    <a href="https://github.com/simplyshort" target="blank">Cassy Geroulis</a>, is
-    <a href="https://github.com/simplyshort/weather-forecast" target="blank">open-sourced on GitHub</a> and hosted on
-    <a href="https://weather-forecast-shecodesapp.netlify.app/" target="blank">Netlify</a>
+        Built by 
+        <a href="https://github.com/simplyshort" target="blank">Cassy Geroulis💟</a>, is
+        <a href="https://github.com/simplyshort/weather-forecast" target="blank">open-sourced on GitHub</a> and hosted on
+        <a href="https://weather-forecast-shecodesapp.netlify.app/" target="blank">Netlify</a>
     </footer>
 </div>
 <script src="src/app.js"></script>
